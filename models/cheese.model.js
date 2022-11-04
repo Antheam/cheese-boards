@@ -4,7 +4,7 @@ const db = require('../db/db')
 class Cheese extends Model {}
 
 
-User.init({
+Cheese.init({
     id:{
         type: DataTypes.INTEGER,
         primaryKey: true,

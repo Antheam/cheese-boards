@@ -4,7 +4,7 @@ const db = require('../db/db')
 class Board extends Model {}
 
 
-User.init({
+Board.init({
     id:{
         type: DataTypes.INTEGER,
         primaryKey: true,
