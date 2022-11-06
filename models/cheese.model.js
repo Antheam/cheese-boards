@@ -5,11 +5,6 @@ class Cheese extends Model {}
 
 
 Cheese.init({
-    id:{
-        type: DataTypes.INTEGER,
-        primaryKey: true,
-        autoIncrement: true
-    },
     title: {
         type: DataTypes.STRING,
         allowNull: false
