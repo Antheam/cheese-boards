@@ -3,7 +3,7 @@ const Cheese = require('./cheese.model')
 const Board = require('./board.model')
 
 
-//one to one relationship
+//one to many relationship
 User.hasMany(Board)
 Board.belongsTo(User)
 

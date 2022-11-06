@@ -12,4 +12,11 @@ describe("User tests", () => {
         expect(testUser.name).toEqual("J")
         expect(testUser.email).toEqual("j@gmail.com")
     })
+
+    test("checks typeof name and email", async () => {
+        const testUser = await User.build({name: "J", email: "j@gmail.com" })
+        expect(typeof(testUser.name)).toEqual("string")
+        expect(typeof(testUser.email)).toEqual("string")
+    })
+
 })
